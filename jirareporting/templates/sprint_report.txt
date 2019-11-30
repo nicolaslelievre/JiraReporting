@@ -1,0 +1,6 @@
+{% for epic, issues in epics.items() %}
+  {{ epic|e }}:
+       {% for issue in issues %}
+        - {{ issue.summary|e }}
+       {% endfor %}
+{% endfor %}
